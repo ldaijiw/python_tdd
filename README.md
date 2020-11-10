@@ -22,6 +22,10 @@ Tests can give developeres the confidence when refactoring code, as they are mor
 **Steps**
 - Create a file to write tests
 - Run the tests and they will all fail (``pytest`` in terminal)
+- For more detailed descriptions
+```
+python -m unittest discover -v
+```
 - Create a file to write code
 - Refactor and add the code to pass the tests
 
@@ -30,4 +34,6 @@ Tests can give developeres the confidence when refactoring code, as they are mor
 - testfile: test_simple_calc (should contain test at beginning or end)
 - If tests are defined as methods on a class, class name should start with _Test_ (e.g. ``TestExample``), class should not have an init method
 - Test methods/functions should begin with ``test_`` (e.g. ``test_example``)
+
+
 
