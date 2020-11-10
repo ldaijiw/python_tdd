@@ -36,5 +36,17 @@ python -m unittest discover -v
 - If tests are defined as methods on a class, class name should start with _Test_ (e.g. ``TestExample``), class should not have an init method
 - Test methods/functions should begin with ``test_`` (e.g. ``test_example``)
 
+Example Test Class
+```python
 
+# unittest.TestCase works with unittest framework as a parent class
+class TestCalc(unittest.TestCase):
+    calc = SimpleCalc()
+    
+    # start each method with keyword test_
+    def test_add(self):
+        # returns True if 2 + 4 returns 6, otherwise False
+        self.assertEqual(self.calc.add(2, 4), 6)
+
+```
 
