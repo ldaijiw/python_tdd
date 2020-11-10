@@ -24,6 +24,7 @@ Tests can give developeres the confidence when refactoring code, as they are mor
 - Run the tests and they will all fail (``pytest`` in terminal)
 - For more detailed descriptions
 ```
+pytest -v
 python -m unittest discover -v
 ```
 - Create a file to write code

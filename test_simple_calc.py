@@ -1,6 +1,6 @@
 from simple_calc import SimpleCalc
 import unittest
-import pytest
+#import pytest
 
 # unittest.TestCase works with unittest framework as a parent class
 class TestCalc(unittest.TestCase):
