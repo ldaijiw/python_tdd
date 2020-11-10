@@ -36,7 +36,7 @@ python -m unittest discover -v
 - If tests are defined as methods on a class, class name should start with _Test_ (e.g. ``TestExample``), class should not have an init method
 - Test methods/functions should begin with ``test_`` (e.g. ``test_example``)
 
-Example Test Class
+**Example Test Class**
 ```python
 
 # unittest.TestCase works with unittest framework as a parent class
@@ -50,3 +50,8 @@ class TestCalc(unittest.TestCase):
 
 ```
 
+### How does pytest work
+
+- pytest looks for files with ``test_*.py`` or ``*_test.py`` format to run 
+- ``-v`` is for verbose flag, adds more details in the test report
+- Can use different test conditions (e.g. ``assertEqual()``) as required
